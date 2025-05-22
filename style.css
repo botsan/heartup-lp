@@ -80,7 +80,7 @@ flex-wrap: wrap;
 .btn-grad {
 flex: 1; /* ← 追加：親内で均等幅にする */
 display: inline-block;
-padding: 10px 16px;
+padding: 10px 10px;
 border-radius: 999px;
 font-size: 4vw;
 font-weight: bold;
@@ -168,7 +168,7 @@ max-width: 100%; /* 念のため追加 */
 .features {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
     margin-bottom: 24px;
 }
 
