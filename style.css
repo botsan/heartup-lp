@@ -1,0 +1,204 @@
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    /* min-width: 320px; /* 最小幅が必要な場合は開放 */
+    /* max-width: 430px; /* 最大幅が必要な場合は開放 */
+    margin: 0 auto;
+    padding: 0 4px;
+    background-color: #CBF3FE;
+}
+
+section {
+    margin-bottom: 8px;
+opacity: 0;
+transform: translateY(20px);
+transition: all 0.6s ease;
+}
+
+section.fade-in {
+opacity: 1;
+transform: none;
+}
+
+img.block {
+    width: 100%;
+    display: block;
+}
+
+.desc-text {
+    font-size: 2.5vw;
+    color: #555;
+    line-height: 1.6;
+    margin: 8px 0 16px;
+    padding: 0 4px;
+}
+
+.label-pill {
+    background-color: white;
+    color: #2d2f32;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    display: inline-block;
+    margin: 0 auto;
+    display: table;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.copy-ok {
+    text-align: center;
+    font-size: 4vw;
+    color: #d60000;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+.copy-black {
+    text-align: center;
+    font-size: 4vw;
+    color: #2d2f32;
+    font-weight: bold;
+    margin: 2rem 0 -0.5rem 0;
+}
+.double-buttons {
+display: flex;
+gap: 12px;
+justify-content: center;
+margin: 16px 0;
+flex-wrap: wrap;
+}
+
+.btn-grad {
+flex: 1; /* ← 追加：親内で均等幅にする */
+display: inline-block;
+padding: 10px 16px;
+border-radius: 999px;
+font-size: 3vw;
+font-weight: bold;
+color: #fff;
+text-align: center;
+text-decoration: none;
+white-space: nowrap;
+max-width: 100%; /* 念のため追加 */
+}
+
+.btn-grad.blue {
+    background: linear-gradient(to right, #70d6f9, #9040e5);
+}
+
+.btn-grad.brown {
+    background: linear-gradient(to right, #e6c472, #5c3c34);
+}
+
+.cta-button,
+.cta-button.brown {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3vw;
+}
+
+.cta-button {
+    background: linear-gradient(to right, #70d6f9, #9040e5);
+}
+
+.cta-button.brown {
+    background: linear-gradient(to right, #e6c472, #5c3c34);
+}
+
+.gel-feature {
+    padding: 24px 12px;
+    background: #fff;
+}
+
+.gel-feature h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    background: linear-gradient(to right, #0dd7df, #8e2dff);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gel-feature h3 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #2d3e50;
+    text-align: center;
+    margin: 16px 50px;
+    position: relative;
+}
+
+.gel-feature h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 6px auto 0;
+    background: linear-gradient(to right, #0dd7df, #8e2dff);
+    border-radius: 2px;
+}
+
+.highlight-box {
+    background: #f2f9fc;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+    margin: 16px 0;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.notice-block {
+    padding: 24px 12px;
+    color: #1a3b6d;
+    font-size: 2vw;
+    line-height: 1.7;
+}
+
+.notice-block h3 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    color: #1a3b6d;
+}
+
+.notice-list {
+    padding-left: 1.2em;
+    margin-bottom: 16px;
+}
+
+.notice-list li {
+    list-style-type: disc;
+    margin-bottom: 6px;
+}
+
+.code {
+    text-align: right;
+    font-size: 2vw;
+    color: #1a3b6d;
+    margin-top: 12px;
+}
