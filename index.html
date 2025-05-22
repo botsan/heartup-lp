@@ -109,6 +109,78 @@
     </section>
 
   </div>
+
+
+
+  <!-- ここからはデザイン検証用 -->
+  <style>
+    .debug-toggle {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 9999;
+      padding: 6px 10px;
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .clamp-mode .label-pill,
+    .clamp-mode .copy-ok,
+    .clamp-mode .copy-black,
+    .clamp-mode .cta-button,
+    .clamp-mode .cta-button.brown,
+    .clamp-mode .btn-grad,
+    .clamp-mode .notice-block h3 {
+      font-size: clamp(1rem, 3vw, 1.2rem) !important;
+    }
+    .clamp-mode .desc-text,
+    .clamp-mode .notice-list {
+      font-size: clamp(0.5rem, 2.5vw, 0.8rem) !important;
+    }
+    .clamp-mode .code {
+      font-size: clamp(0.5rem, 2vw, 0.8rem) !important;
+    }
+    .clamp-mode .gel-feature h2,
+    .clamp-mode .gel-feature h3 {
+      font-size: clamp(1rem, 4vw, 1.2rem) !important;
+    }
+  </style>
+  <style>
+    .debug-toggle {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 9999;
+      padding: 6px 10px;
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+  <button class="debug-toggle" onclick="toggleContainerWidth()">幅の制限切替</button>
+  <script>
+    function toggleContainerWidth() {
+      const container = document.querySelector('.container');
+      const isLimited = container.classList.toggle('limited');
+      document.body.classList.toggle('clamp-mode', isLimited);
+
+      if (isLimited) {
+        container.style.maxWidth = '430px';
+        container.style.minWidth = '320px';
+      } else {
+        container.style.maxWidth = '';
+        container.style.minWidth = '';
+      }
+    }
+  </script>
+<!-- ここまで -->
+
 </body>
 
 </html>
